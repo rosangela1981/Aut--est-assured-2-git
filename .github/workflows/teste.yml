@@ -22,7 +22,7 @@ jobs:
           distribution: 'temurin'
           java-version: '22'
 
-      - name: Validate Maven
+      - name: Set up Maven
         run: mvn --version
 
       - name: Run tests
