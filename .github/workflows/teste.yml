@@ -26,4 +26,4 @@ jobs:
         run: mvn --version
 
       - name: Run tests
-        run: mvn test -Dtest=Teste
+        run: mvn test -Dsurefire.failIfNoSpecifiedTests=false
