@@ -24,4 +24,5 @@ jobs:
         run: mvn --version
 
       - name: Run tests
+        # Adicionamos a flag para não falhar se não encontrar o padrão "Teste"
         run: mvn test -Dtest=Teste -Dsurefire.failIfNoSpecifiedTests=false
